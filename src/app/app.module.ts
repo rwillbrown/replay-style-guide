@@ -5,9 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import * as AppComponents from './components';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ...Object.keys(AppComponents).map((k) => AppComponents[k])
   ],
   imports: [
     BrowserModule,

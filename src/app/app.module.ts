@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 
 import * as AppComponents from './components';
 
+export function toArray(obj) {
+    return Object.keys(obj).map((k) => obj[k]);
+}
+
 @NgModule({
   declarations: [
-    AppComponent,
-    ...Object.keys(AppComponents).map((k) => AppComponents[k])
+    ...toArray(AppComponents),
+    AppComponent
   ],
   imports: [
     BrowserModule,

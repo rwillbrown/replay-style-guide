@@ -1,0 +1,38 @@
+/* Variables */
+
+/* Fonts */
+$font-family:           "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+/* Colors */
+$white:                 #FFFFFF !default;
+
+$green:                 #8DC63D !default;
+$green-light:           #ADCC7E !default;
+$blue:                  #2C82C9 !default;
+$blue-light:            #54ACD2 !default;
+$purple:                #9365B8 !default;
+$purple-light:          #B284D7 !default;
+$yellow:                #FAC51C !default;
+$yellow-light:          #F7DA64 !default;
+$orange:                #F37934 !default;
+$orange-light:          #FBA026 !default;
+$red:                   #D14841 !default;
+$red-light:             #EB6B56 !default;
+
+$brand-blue:            #070F29 !default;
+$brand-blue-light:      #20273F !default;
+$brand-blue-lighter:    #28324E !default;
+$brand-blue-lightest:   #475577 !default;
+
+$gray-dark:             #3C3F49 !default;
+$gray:                  #686B77 !default;
+$gray-light:            #CBCED5 !default;
+$gray-lightest:         #ECEDEE !default;
+
+/* Gradients */
+$gradient-green:        linear-gradient(to right, $green, $green-light);
+$gradient-blue:         linear-gradient(to right, $blue, $blue-light);
+$gradient-purple:       linear-gradient(to right, $purple, $purple-light);
+$gradient-yellow:       linear-gradient(to right, $yellow, $yellow-light);
+$gradient-orange:       linear-gradient(to right, $orange, $orange-light);
+$gradient-red:          linear-gradient(to right, $red, $red-light);

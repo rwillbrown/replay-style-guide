@@ -1,6 +1,8 @@
 /* Variables */
 
 /* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
 $font-family:           "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 /* Colors */
@@ -36,3 +38,7 @@ $gradient-purple:       linear-gradient(to right, $purple, $purple-light);
 $gradient-yellow:       linear-gradient(to right, $yellow, $yellow-light);
 $gradient-orange:       linear-gradient(to right, $orange, $orange-light);
 $gradient-red:          linear-gradient(to right, $red, $red-light);
+
+/* Breakpoints */
+$mobile-breakpoint:     767px;
+$tablet-breakpoint:     960px;

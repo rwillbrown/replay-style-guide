@@ -1,0 +1,30 @@
+
+button {
+    outline: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+button.full-height {
+    height: 100%;
+}
+
+.mobile-cancel-button {
+    display: none;
+    background-color: $brand-blue;
+    color: $white;
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .mobile-cancel-button { display: block; }
+}

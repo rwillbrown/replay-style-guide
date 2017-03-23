@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("mobile-search-icon").addEventListener("click", function() {
             document.getElementsByTagName("header")[0].classList.toggle("search-open");
             document.getElementsByTagName("body")[0].classList.toggle("search-open");
-            document.getElementById("search").focus();
+            //document.getElementById("search").focus();
         });
 
         /* Mobile search cancel button */

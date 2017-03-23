@@ -1,0 +1,13 @@
+
+/* Create margin and padding helper classes */
+@each $size, $value in $spacer-sizes {
+  @each $side in (top, left, bottom, right) {
+    .m-#{str-slice($side, 0, 1)}-#{$size} {
+      margin-#{$side}: #{$value};
+    }
+  
+    .p-#{str-slice($side, 0, 1)}-#{$size} {
+      padding-#{$side}: #{$value};
+    }
+  }
+}

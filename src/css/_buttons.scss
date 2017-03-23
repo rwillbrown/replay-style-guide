@@ -1,28 +1,88 @@
 
-button {
+button, .button {
     outline: 0;
     border: none;
-    background: none;
     cursor: pointer;
+    background: none;
+    text-align: center;
     position: relative;
+    display: inline-block;
     box-sizing: border-box;
-    font-weight: 300;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px 0;
+    line-height: 18px;
+    font-size: $font-size-base;
+    color: $white;
+    background-color: $blue;
+}
+button:hover, .button:hover {
+    background-color: $blue-light;
 }
 
-button.full-height {
+button.full-height, .button.full-height {
     height: 100%;
+}
+
+button.blue, .button.blue {
+    background-color: $blue;
+}
+button.blue:hover, .button.blue:hover {
+    background-color: $blue-light;
+}
+button.green, .button.green {
+    background-color: $green;
+}
+button.green:hover, .button.green:hover {
+    background-color: $green-light;
+}
+button.dark-blue, .button.dark-blue {
+    background-color: $brand-blue-lighter;
+}
+button.dark-blue:hover, .button.dark-blue:hover {
+    background-color: $brand-blue-lightest;
+}
+button.purple, .button.purple {
+    background-color: $purple;
+}
+button.purple:hover, .button.purple:hover {
+    background-color: $purple-light;
+}
+button.yellow, .button.yellow {
+    background-color: $yellow;
+}
+button.yellow:hover, .button.yellow:hover {
+    background-color: $yellow-light;
+}
+button.red, .button.red {
+    background-color: $red;
+}
+button.red:hover, .button.red:hover {
+    background-color: $red-light;
+}
+button.orange, .button.orange {
+    background-color: $orange;
+}
+button.orange:hover, .button.orange:hover {
+    background-color: $orange-light;
 }
 
 .mobile-cancel-button {
     display: none;
     background-color: $brand-blue;
     color: $white;
+    font-weight: 300;
+    width: auto;
     padding: 0 10px;
     font-size: 12px;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 2;
+}
+.mobile-cancel-button:hover {
+    background-color: $brand-blue-lighter;
 }
 
 @media (max-width: $mobile-breakpoint) {

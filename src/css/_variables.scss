@@ -5,11 +5,14 @@
 
 $font-family:           "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
+$font-size-sm:          12px;
+$font-size-base:        15px;
+
 /* Colors */
 $white:                 #FFFFFF !default;
 
 $green:                 #8DC63D !default;
-$green-light:           #ADCC7E !default;
+$green-light:           #ABD373 !default;
 $blue:                  #2C82C9 !default;
 $blue-light:            #54ACD2 !default;
 $purple:                #9365B8 !default;
@@ -42,3 +45,11 @@ $gradient-red:          linear-gradient(to right, $red, $red-light);
 /* Breakpoints */
 $mobile-breakpoint:     767px;
 $tablet-breakpoint:     960px;
+
+/* Spacers */
+$spacer-sizes: (
+    sm: 15px,
+    md: 30px,
+    lg: 45px,
+    xl: 60px
+);

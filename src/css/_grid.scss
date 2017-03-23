@@ -107,6 +107,7 @@
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
+    padding: 10px;
 }
 
 .col {
@@ -116,6 +117,35 @@
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     max-width: 100%;
+}
+
+.col.full,
+.col-1.full,
+.col-2.full,
+.col-3.full,
+.col-4.full,
+.col-5.full,
+.col-6.full,
+.col-7.full,
+.col-8.full,
+.col-9.full,
+.col-10.full,
+.col-11.full,
+.col-12.full,
+.col-offset-0.full,
+.col-offset-1.full,
+.col-offset-2.full,
+.col-offset-3.full,
+.col-offset-4.full,
+.col-offset-5.full,
+.col-offset-6.full,
+.col-offset-7.full,
+.col-offset-8.full,
+.col-offset-9.full,
+.col-offset-10.full,
+.col-offset-11.full,
+.col-offset-12.full {
+    padding: 0;
 }
 
 .start {
@@ -327,5 +357,14 @@
 @media only screen and (min-width: 75em) {
     .block {
         height: 17.5rem;
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .mobile-center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
     }
 }

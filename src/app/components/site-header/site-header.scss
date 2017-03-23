@@ -114,8 +114,8 @@ header #replay-search {
     background-color: $brand-blue-light;
 }
 header #replay-search #search {
-    padding: 0 0 0 calc(5% + 35px);
-    width: calc(95% - 35px);
+    padding: 0 0 0 calc(2% + 35px);
+    width: calc(98% - 35px);
     border: none;
     background-color: $brand-blue-light;
     color: $white;
@@ -128,7 +128,7 @@ header #replay-search label {
     position: absolute;
     z-index: 1;
     top: 55%;
-    left: 5%;
+    left: 2%;
     transform: translateY(-50%);
     color: $green;
     font-size: 20px;
@@ -164,7 +164,15 @@ header #replay-search label span.hide {
 header #header-account {
     height: 100%;
 }
-header #header-account button { }
+header #header-account button { 
+    background-color: $brand-blue;
+    font-weight: 300;
+    line-height: normal;
+    font-size: $font-size-sm;
+}
+header #header-account button:hover {
+    background-color: $brand-blue-lighter;
+}
 header #header-account button i {
     color: $white;
 }
@@ -173,8 +181,8 @@ header #header-account button span {
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(110%,-110%);
-    padding: 3px 0;
+    transform: translate(90%,-105%);
+    padding: 2px 0;
     width: 18px;
     border-radius: 20px;
     text-align: center;
@@ -255,7 +263,7 @@ header #header-account button#mobile-search-icon {
 
     header #header-account button {
         width: 18%;
-        margin-top: 12px;
+        height: 100%;
     }
     header #header-account button#mobile-search-icon {
         display: inline;

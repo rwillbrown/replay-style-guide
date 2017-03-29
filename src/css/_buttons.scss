@@ -1,3 +1,4 @@
+/* Button Styles */
 
 button, .button {
     outline: 0;
@@ -66,6 +67,12 @@ button.orange, .button.orange {
 }
 button.orange:hover, .button.orange:hover {
     background-color: $orange-light;
+}
+button.white, .button.white {
+    background-color: $white;
+}
+button.white:hover, .button.white:hover {
+    background-color: $gray-lightest;
 }
 
 .mobile-cancel-button {

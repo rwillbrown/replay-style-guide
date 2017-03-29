@@ -39,7 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
             /* THIS IS WHERE WE DO A CHECK TO MAKE SURE THE USER ISN'T IN ANOTHER INPUT BOX */
             /* ALSO WILL PROBABLY ONLY WANT TO DO THIS ON CERTAIN KEYS */
             /* WILL ALSO NEED PLENTY OF TESTING TO MAKE SURE THE FIRST KEYSTROKE OR TWO AREN'T MISSED */
-            document.getElementById("search").focus();
+            if (document.activeElement.tagName != "INPUT" && document.activeElement.tagName != "TEXTAREA") {
+                document.getElementById("search").focus();
+            }
         });
 
 });

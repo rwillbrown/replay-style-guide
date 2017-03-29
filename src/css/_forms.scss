@@ -1,0 +1,181 @@
+form {}
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-in-out;
+    color: $gray-dark;
+    font-size: 18px;
+    cursor: text;
+}
+.input-group i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+}
+.input-group.valid i {
+    color: $green;
+}
+.input-group.light label {
+    color: $white;
+}
+.input-group.invalid label {
+    color: $red;
+}
+.input-group.invalid .input-error {
+    background-color: $red;
+    color: $white;
+    font-size: $font-size-sm;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.input-group.invalid .input-error i {
+    position: relative;
+    font-size: 16px;
+    vertical-align: text-top;
+}
+.input-group input,
+.input-group textarea {
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid $black;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    resize: none;
+    max-height: 32px;
+    font-size: 18px;
+    color: $gray-dark;
+}
+.input-group input:focus,
+.input-group input.filled,
+.input-group textarea:focus,
+.input-group textarea.filled {
+    border-bottom: 2px solid $green;
+}
+.input-group textarea {
+    transition: all .2s ease-in-out;
+}
+.input-group.light input,
+.input-group.light textarea {
+    border-bottom: 1px solid $white;
+}
+.input-group.invalid input,
+.input-group.invalid textarea {
+    border-bottom: 1px solid $red;
+}
+.input-group.light input,
+.input-group.light textarea {
+    color: $white;
+}
+.input-group.valid input,
+.input-group.valid textarea {
+    color: $green;
+}
+.input-group textarea:focus,
+.input-group textarea.filled {
+    height: 75px;
+    max-height: 75px;
+}
+.input-group input:focus + label,
+.input-group input.filled + label,
+.input-group textarea:focus + label,
+.input-group textarea.filled + label {
+    color: $green;
+    font-size: 14px;
+    top: -18px;
+}
+.input-group.invalid input:focus + label,
+.input-group.invalid input.filled + label,
+.input-group.invalid textarea:focus + label,
+.input-group.invalid textarea.filled + label {
+    color: $red;
+}
+
+.input-group .input-update {
+    color: $green;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.input-group .input-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 97px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.input-group .input-switch input[type="checkbox"] {
+    display: none;
+}
+.input-group .input-switch .switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.input-group .input-switch .switch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.input-group .input-switch .switch-inner:before,
+.input-group .input-switch .switch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 27px;
+    padding: 0;
+    line-height: 27px;
+    font-size: 15px;
+    color: $white; 
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.input-group .input-switch .switch-inner:before {
+    content: "Public";
+    padding-left: 10px;
+    background-color: $green;
+    color: $white;
+}
+.input-group .input-switch .switch-inner:after {
+    content: "Private";
+    padding-right: 10px;
+    background-color: $brand-blue;
+    color: $white;
+    text-align: right;
+}
+.input-group .input-switch .switch-switch {
+    display: block;
+    width: 17px;
+    margin: 5px;
+    background: $white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 66px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.input-group .input-switch input[type="checkbox"]:checked + .switch-label .switch-inner {
+    margin-left: 0;
+}
+.input-group .input-switch input[type="checkbox"]:checked + .switch-label .switch-switch {
+    right: 0px; 
+}

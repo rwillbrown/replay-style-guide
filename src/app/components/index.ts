@@ -4,4 +4,5 @@ export * from './site-header/site-header'; // Relative to /src/app/components, t
 export * from './categories-bar/categories-bar';
 export * from './buttons/buttons';
 export * from './forms/forms';
+export * from './product-card/product-card';
 export * from './site-footer/site-footer';

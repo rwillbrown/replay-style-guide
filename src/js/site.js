@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("mobile-menu-icon").addEventListener("click", function() {
             this.classList.toggle("open");
             document.getElementById("nav-icon").classList.toggle("open");
+            document.getElementById("categories-bar").classList.toggle("open");
         });
 
         /* Mobile search icon button */

@@ -2,6 +2,9 @@
 
 #categories-bar {
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.24);
+    position: fixed;
+    top: 60px;
+    z-index: 99999;
 }
 #categories-btn {
     font-size: $font-size-sm;
@@ -45,6 +48,9 @@
     font-size: $font-size-sm;
     text-transform: uppercase;
     cursor: pointer;
+}
+#checkout-btn:hover {
+    background-color: $green-light;
 }
 
 @media (max-width: $mobile-breakpoint) {

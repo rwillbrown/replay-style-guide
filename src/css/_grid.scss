@@ -148,6 +148,16 @@
     padding: 0;
 }
 
+.divider {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.divider div {
+    height: 1px;
+    width: 100%;
+    background-color: #CBCED5;
+}
+
 .start {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -211,9 +221,6 @@
 }
 
 @media only screen and (min-width: 48em) {
-    .grid-container-2 {
-    }
-
     .grid-container.mobile-full {
         padding-right: 0.5rem;
         padding-left: 0.5rem;

@@ -119,6 +119,7 @@ form {}
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 .input-group .input-switch input[type="checkbox"] {
     display: none;

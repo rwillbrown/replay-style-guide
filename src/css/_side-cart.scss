@@ -1,15 +1,23 @@
+@import 'variables';
+@import 'mixins';
 
 .side-cart {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
     background-color: $white;
     min-height: 100vh;
+    height: calc(100vh - 270px);
+    overflow: auto;
     width: 300px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     z-index: 99998;
     box-sizing: border-box;
     padding-top: 95px;
+    transition: right .2s ease-in-out;
+}
+.side-cart.show {
+    right: 0;
 }
 
 .cart-title {
@@ -26,10 +34,54 @@
     vertical-align: middle;
 }
 
+.side-cart-item {
+    @include display-flex();
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid $gray-lightest;
+}
+.side-cart-item:last-child {
+    border: none;
+}
+.side-cart-item .quantity {
+    width: 15%;
+    margin-right: 2.5%;
+    text-align: center;
+}
+.side-cart-item .quantity span {
+    color: $gray-dark;
+    font-size: 25px;
+    line-height: 0;
+}
+.side-cart-item .quantity .quantity-btn {
+    cursor: pointer;
+    color: $gray-dark;
+}
+.side-cart-item .quantity .quantity-btn:hover {
+    color: $blue;
+}
+.side-cart-item .image {
+    width: 20%;
+    margin-right: 5%;
+}
+.side-cart-item .image img {
+    width: 100%;
+}
+.side-cart-item .price {
+    width: 42.5%;
+    font-size: 25px;
+    line-height: 0;
+}
+.side-cart-item .remove {
+    cursor: pointer;
+    color: $gray-dark;
+}
+.side-cart-item .remove:hover {
+    color: $blue;
+}
+
 .side-cart-bottom {
     background-color: $gray-lightest;
-    position: absolute;
-    bottom: 0;
 }
 
 .cart-buy-subtotal {
@@ -49,4 +101,10 @@
 #sell-subtotal {
     color: $green;
     font-size: 25px;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .side-cart {
+        padding-top: 45px;
+    }
 }

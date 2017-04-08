@@ -45,4 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        /* Show/Hide the side cart when the icon is clicked */
+        document.getElementById("cart-icon").addEventListener("click", function() {
+            document.getElementsByClassName("side-cart")[0].classList.toggle("show");
+        });
+
 });

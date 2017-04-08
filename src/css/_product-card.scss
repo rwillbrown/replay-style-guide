@@ -1,0 +1,170 @@
+@import 'variables';
+
+.item-container {
+
+}
+.item-container .item {
+    position: relative;
+    background-color: $white;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.35);
+    padding: 0;
+}
+.item-container .item .item-photo {
+    padding: 10px 0;
+}
+.item-container .item .item-photo img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.item-container .item .item-details {
+    border-top: 1px solid $gray-lightest;
+    padding: 15px 10px 50px;
+    position: relative;
+}
+.item-container .item .item-details .item-manufacturer {
+    font-size: $font-size-sm;
+    color: $gray-light;
+}
+.item-container .item .item-details h1 {
+    color: $gray-dark;
+    height: 38px;
+    max-height: 38px;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+.item-container .item .item-details .item-description {
+    display: block;
+    font-size: $font-size-sm;
+    color: $gray;
+    height: 35px;
+    max-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-container .item .item-details .item-prices {
+    margin-top: 2vw;
+    height: 35px;
+    max-height: 35px;
+}
+.item-container .item .item-details .item-prices .item-new-price {
+    font-size: $font-size-sm;
+    font-weight: 700;
+    color: $blue;
+}
+.item-container .item .item-details .item-prices .item-used-price {
+    font-size: $font-size-sm;
+    color: $orange;
+}
+.item-container .item .item-btns {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.item-container .item .item-btns a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.item-container .item .item-btns a.btn-sell {
+    background-color: $green;
+}
+.item-container .item .item-btns a.btn-sell:hover {
+    background-color: $green-light;
+}
+.item-container .item .item-btns a.btn-buy {
+    background-color: $blue;
+}
+.item-container .item .item-btns a.btn-buy:hover {
+    background-color: $blue-light;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .item-container {
+        padding: 0;
+        border-bottom: 1px solid $gray-lightest;
+    }
+    .item-container .item {
+        box-shadow: none;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        max-height: 100px;
+    }
+    .item-container .item .item-photo {
+        display: flex;
+        width: 25%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        border-right: 1px solid $gray-lightest;
+    }
+    .item-container .item .item-photo img {
+        width: auto;
+        max-width: 60%;
+        max-height: 100%;
+    }
+    .item-container .item .item-details {
+        border: 0;
+        width: 50%;
+        padding: 5px 10px 0;
+        box-sizing: border-box;
+        border-right: 1px solid $gray-lightest;
+    }
+    .item-container .item .item-details .item-manufacturer {
+    }
+    .item-container .item .item-details h1 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .item-container .item .item-details .item-description {
+        display: none;
+    }
+    .item-container .item .item-details .item-prices {
+        margin-top: 0;
+        height: auto;
+    }
+    .item-container .item .item-details .item-prices .item-new-price {
+    }
+    .item-container .item .item-details .item-prices .item-used-price {
+    }
+    .item-container .item .item-btns {
+        position: relative;
+        width: 25%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .item-container .item .item-btns .grid {
+        display: block;
+    }
+    .item-container .item .item-btns a {
+        padding: 15px 0;
+        margin: auto;
+        height: 50%;
+    }
+    .item-container .item .item-btns .col:first-child {
+        border-bottom: 1px solid $gray-lightest;
+    }
+    .item-container .item .item-btns .col:last-child {
+        border-bottom: none;
+    }
+    .item-container .item .item-btns a.btn-sell {
+        background-color: transparent;
+        color: $green;
+    }
+    .item-container .item .item-btns a.btn-sell:hover {
+        background-color: $gray-lightest;
+    }
+    .item-container .item .item-btns a.btn-buy {
+        background-color: transparent;
+        color: $blue;
+    }
+    .item-container .item .item-btns a.btn-buy:hover {
+        background-color: $gray-lightest;
+    }
+}

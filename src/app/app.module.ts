@@ -15,8 +15,15 @@ export function toArray(obj) {
 
 @NgModule({
   declarations: [
-    ...toArray(AppComponents),
-    ...toArray(AppPages),
+    AppComponents.Buttons,
+    AppComponents.Forms,
+    AppComponents.SiteFooter,
+    AppComponents.SiteHeader,
+    AppComponents.categoriesBar,
+    AppComponents.productCard,
+    AppComponents.sideCart,
+    AppPages.IndexPage,
+    AppPages.ProductPage,
     AppComponent
   ],
   imports: [

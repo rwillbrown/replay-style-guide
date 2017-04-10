@@ -10,7 +10,6 @@ import { Component } from '@angular/core'; // always imported to create componen
 @Component({
     selector: "buttons", // this is the element name: <site-header></site-header>
     templateUrl: "buttons.html", // a path to this component's .html file relative to the directory of the current file. (usually same directory, so only file name)
-    styleUrls: ["buttons.scss"] // same as above for .scss
 })
 export class Buttons { // export makes this class available to other classes who import it.
     // Code goes here.

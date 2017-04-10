@@ -10,7 +10,6 @@ import { Component } from '@angular/core'; // always imported to create componen
 @Component({
     selector: "site-footer", // this is the element name: <site-header></site-header>
     templateUrl: "site-footer.html", // a path to this component's .html file relative to the directory of the current file. (usually same directory, so only file name)
-    styleUrls: ["site-footer.scss"] // same as above for .scss
 })
 export class SiteFooter { // export makes this class available to other classes who import it.
     // Code goes here.

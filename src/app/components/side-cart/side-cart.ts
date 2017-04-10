@@ -10,7 +10,6 @@ import { Component } from '@angular/core'; // always imported to create componen
 @Component({
     selector: "side-cart", // this is the element name: <site-header></site-header>
     templateUrl: "side-cart.html", // a path to this component's .html file relative to the directory of the current file. (usually same directory, so only file name)
-    styleUrls: ["side-cart.scss"] // same as above for .scss
 })
 export class sideCart { // export makes this class available to other classes who import it.
     // Code goes here.

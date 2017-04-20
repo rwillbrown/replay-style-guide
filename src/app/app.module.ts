@@ -20,6 +20,7 @@ export function toArray(obj) {
     AppComponents.SiteFooter,
     AppComponents.SiteHeader,
     AppComponents.categoriesBar,
+    AppComponents.filtersBar,
     AppComponents.productCard,
     AppComponents.sideCart,
     AppPages.IndexPage,

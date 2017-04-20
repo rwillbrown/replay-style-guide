@@ -1,0 +1,143 @@
+@import 'variables';
+
+#filters-bar {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.24);
+}
+#filters-bar #filters-title {
+    background-color: $brand-blue;
+    color: $green;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    padding: 25px 0;
+    font-weight: 700;
+}
+#filters-bar #reset-filters-btn {
+    font-size: $font-size-sm;
+    color: $gray-dark;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left: 1px solid $gray-lightest;
+    line-height: normal;
+}
+#filters-bar #reset-filters-btn i {
+    display: inline;
+    color: $green;
+    font-size: 18px;
+    margin-right: 3px;
+    line-height: 0;
+}
+#filters-bar #reset-filters-btn:hover {
+    background-color: $gray-lightest;
+}
+@media (max-width: $tablet-breakpoint) {
+    #filters-bar #reset-filters-btn i {
+        display: none;
+    }
+}
+
+#filters-bar #filters-container {}
+#filters-bar #filters-container .filter-container {
+    position: relative;
+}
+#filters-bar #filters-container .filter-container button {
+    background-color: $white;
+    color: $gray-dark;
+    font-size: $font-size-sm;
+    font-weight: 300;
+    width: auto;
+    padding: 25px 20px;
+    border-right: 1px solid $gray-lightest;
+}
+#filters-bar #filters-container button:hover {
+    background-color: $gray-lightest;
+}
+#filters-bar #filters-container button i {
+    display: inline-block;
+    line-height: 0;
+    font-size: 18px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+#filters-bar #filters-container .filter-container .filters {
+    background-color: $white;
+    position: absolute;
+    z-index: 2;
+    max-height: 400px;
+    width: 250px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    overflow-y: auto;
+    display: none;
+}
+#filters-bar #filters-container .filter-container .filters.open {
+    display: block;
+}
+#filters-bar #filters-container .filter-container .filters .filter {
+    font-size: $font-size-sm;
+    color: $gray-dark;
+    border-top: 1px solid $gray-lightest;
+    padding: 25px 12px;
+}
+#filters-bar #filters-container .filter-container .filters .filter input[type="checkbox"] {
+    visibility: hidden;
+}
+#filters-bar #filters-container .filter-container .filters .filter label:before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    border: 1px solid $gray-lightest;
+    margin-right: 10px;
+    transition: all .15s ease-in-out;
+}
+#filters-bar #filters-container .filter-container .filters .filter input[type="checkbox"]:checked + label:before {
+    background-color: $green;
+}
+#filters-bar #filters-container .filter-container .filters .filter label {
+    cursor: pointer;
+    vertical-align: top;
+}
+
+#filters-bar #selected-filters-container {
+    border-top: 1px solid $gray-lightest;
+    display: none;
+}
+#filters-bar #selected-filters-container.open {
+    display: block;
+}
+#filters-bar #selected-filters-container .selected-filter {
+    color: $gray-dark;
+    font-size: $font-size-sm;
+    display: inline-block;
+    padding: 10px 6px 10px 10px;
+    cursor: pointer;
+    line-height: 0;
+}
+#filters-bar #selected-filters-container .selected-filter:hover {
+    color: $green;
+}
+#filters-bar #selected-filters-container .selected-filter .remove-filter {
+    background-color: $green;
+    display: inline-block;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: relative;
+    vertical-align: middle;
+}
+#filters-bar #selected-filters-container .selected-filter .remove-filter i {
+    color: $white;
+    font-size: 14px;
+    display: block;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#filters-bar #selected-filters-container .selected-filter .filter-name {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         /* Keep the placeholder hidden if someone has entered text and left the box */
         document.getElementById("search").addEventListener("blur", function() {
-            var labelSpans = this.nextElementSibling.querySelectorAll("span"), i;
+            var labelSpans = this.nextElementSibling.querySelectorAll("span");
             if (this.value == "") {
-                for (i = 0; i < labelSpans.length; ++i) {
+                for (var i = 0; i < labelSpans.length; ++i) {
                     labelSpans[i].classList.remove("hide");
                 }
             } else {
-                for (i = 0; i < labelSpans.length; ++i) {
+                for (var i = 0; i < labelSpans.length; ++i) {
                     labelSpans[i].classList.add("hide");
                 }
             }
@@ -49,5 +49,18 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("cart-icon").addEventListener("click", function() {
             document.getElementsByClassName("side-cart")[0].classList.toggle("show");
         });
+
+        /* Show/Hide Filter Dropdowns */
+        filterBtns = document.querySelectorAll(".filter-container button");
+        for (var i = 0; i < filterBtns.length; i++) {
+            filterBtns[i].addEventListener("click", function() {
+                for (var j = 0; j < filterBtns.length; j++) {
+                    if (filterBtns[j] != this) {
+                        filterBtns[j].nextElementSibling.classList.remove("open");
+                    }
+                }
+                this.nextElementSibling.classList.toggle("open");
+            });
+        }
 
 });

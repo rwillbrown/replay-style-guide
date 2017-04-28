@@ -63,4 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
 
+        /* Checkout Accordions */
+        checkoutAccordions = document.querySelectorAll("#checkout-forms-container .form-container .title-bar");
+        for (var i = 0; i < checkoutAccordions.length; i++) {
+            checkoutAccordions[i].addEventListener("click", function() {
+                this.parentNode.classList.toggle("active");
+            });
+        }
+
 });

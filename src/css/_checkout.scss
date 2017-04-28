@@ -1,0 +1,102 @@
+@import 'variables';
+
+#checkout-forms-container {
+}
+#checkout-forms-container .form-container {
+    background-color: $white;
+    border-bottom: 1px solid $gray-light;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.29);
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+}
+#checkout-forms-container .form-container.active {
+    max-height: 999px;
+    transition: max-height .3s ease-in-out;
+}
+#checkout-forms-container .form-container .title-bar {
+    background-color: $white;
+    color: $brand-blue;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+#checkout-forms-container .form-container.active .title-bar {
+    background-color: $brand-blue;
+    color: $white;
+}
+#checkout-forms-container .form-container .title-bar i {
+    color: $brand-blue;
+    position: absolute;
+    right: 20px;
+    transform: rotate(0deg);
+    transition: transform .3s ease-in-out;
+}
+#checkout-forms-container .form-container.active .title-bar i {
+    color: $white;
+    margin-top: -3px;
+    transform: rotate(180deg);
+}
+#checkout-forms-container .form-container form {
+    padding: 15px 20px;
+}
+
+button.shipping-btn {
+    border: 2px solid $gray-light;
+    color: $gray;
+    background-color: transparent;
+    padding: 15px 8px;
+    margin-bottom: 15px;
+}
+button.shipping-btn:hover,
+button.shipping-btn.active {
+    border-color: $blue;
+    color: $blue;
+}
+button.shipping-btn .col-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+}
+button.shipping-btn .col-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+#checkout-data-container {}
+#checkout-data-container .data-container {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.29);
+}
+#checkout-data-container .data-container .title-bar {
+    background-color: $white;
+    color: $blue;
+    border-bottom: 1px solid $gray-light;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+#checkout-data-container .data-container .title-bar i {
+    color: $blue;
+    font-size: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#checkout-data-container .data-container .col-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    #checkout-forms-container .form-container .title-bar {
+        background-color: $brand-blue;
+        color: $white;
+    }
+    #checkout-forms-container .form-container .title-bar i {
+        display: none;
+    }
+}

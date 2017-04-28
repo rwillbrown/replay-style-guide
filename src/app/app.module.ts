@@ -21,10 +21,13 @@ export function toArray(obj) {
     AppComponents.SiteHeader,
     AppComponents.categoriesBar,
     AppComponents.filtersBar,
+    AppComponents.progressBar,
     AppComponents.productCard,
+    AppComponents.checkout,
     AppComponents.sideCart,
     AppPages.IndexPage,
     AppPages.ProductPage,
+    AppPages.CheckoutMain,
     AppComponent
   ],
   imports: [
@@ -34,6 +37,7 @@ export function toArray(obj) {
     RouterModule.forRoot([
       { path: 'index', component: AppPages.IndexPage },
       { path: 'product', component: AppPages.ProductPage },
+      { path: 'checkout', component: AppPages.CheckoutMain },
       // { path: 'content', component: ContentDetailComponent },
       { path: '', redirectTo: 'index', pathMatch: 'full' }
     ]),

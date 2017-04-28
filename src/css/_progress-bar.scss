@@ -1,0 +1,33 @@
+@import 'variables';
+
+#progress-bar-container {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.24);
+}
+#progress-bar-container .progress-title {
+    color: $gray-dark;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#progress-bar-container .progress-title #progress-total-step {
+    color: $gray-light;
+}
+#progress-bar-container #progress-bar {
+    background-color: $gray-lightest;
+    width: 50%;
+    height: 15px;
+    border-radius: 15px;
+}
+#progress-bar-container #progress-bar #progress {
+    background-color: $green;
+    height: 100%;
+    border-radius: 15px;
+    width: 0;
+    max-width: 100% !important;
+    transition: width .3s ease-in-out;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    #progress-bar-container #progress-bar {
+        width: 80%;
+    }
+}

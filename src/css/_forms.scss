@@ -101,6 +101,37 @@ form {}
     color: $red;
 }
 
+.input-group.checkbox {
+    margin-top: 0;
+}
+.input-group.checkbox label {
+    font-size: $font-size-sm;
+    color: $gray-dark;
+    position: relative;
+    cursor: pointer;
+    vertical-align: text-top;
+    left: 25px;
+}
+.input-group.checkbox input[type="checkbox"] {
+    visibility: hidden;
+}
+.input-group.checkbox label:before {
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    border: 1px solid $gray-light;
+    margin-right: 10px;
+    transition: all .15s ease-in-out;
+}
+.input-group.checkbox input[type="checkbox"]:checked + label:before {
+    background-color: $green;
+}
+
 .input-group .input-update {
     color: $green;
     font-size: 18px;

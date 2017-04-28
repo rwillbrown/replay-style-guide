@@ -388,4 +388,34 @@
         justify-content: center;
         text-align: center;
     }
+
+    .col.mobile-full,
+    .col-1.mobile-full,
+    .col-2.mobile-full,
+    .col-2-5.mobile-full,
+    .col-3.mobile-full,
+    .col-4.mobile-full,
+    .col-5.mobile-full,
+    .col-6.mobile-full,
+    .col-7.mobile-full,
+    .col-8.mobile-full,
+    .col-9.mobile-full,
+    .col-10.mobile-full,
+    .col-11.mobile-full,
+    .col-12.mobile-full,
+    .col-offset-0.mobile-full,
+    .col-offset-1.mobile-full,
+    .col-offset-2.mobile-full,
+    .col-offset-3.mobile-full,
+    .col-offset-4.mobile-full,
+    .col-offset-5.mobile-full,
+    .col-offset-6.mobile-full,
+    .col-offset-7.fmobile-ull,
+    .col-offset-8.mobile-full,
+    .col-offset-9.mobile-full,
+    .col-offset-10.mobile-full,
+    .col-offset-11.mobile-full,
+    .col-offset-12.mobile-full {
+        padding: 0;
+    }
 }

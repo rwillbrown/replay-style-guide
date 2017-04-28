@@ -100,3 +100,14 @@ button.shipping-btn .col-3 {
         display: none;
     }
 }
+
+.item-checkout .col-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+}
+.item-checkout .col-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+}

@@ -24,10 +24,12 @@ export function toArray(obj) {
     AppComponents.progressBar,
     AppComponents.productCard,
     AppComponents.checkout,
+    AppComponents.checkoutRvw,
     AppComponents.sideCart,
     AppPages.IndexPage,
     AppPages.ProductPage,
     AppPages.CheckoutMain,
+    AppPages.CheckoutReview,
     AppComponent
   ],
   imports: [
@@ -38,6 +40,7 @@ export function toArray(obj) {
       { path: 'index', component: AppPages.IndexPage },
       { path: 'product', component: AppPages.ProductPage },
       { path: 'checkout', component: AppPages.CheckoutMain },
+      { path: 'checkout-review', component: AppPages.CheckoutReview },
       // { path: 'content', component: ContentDetailComponent },
       { path: '', redirectTo: 'index', pathMatch: 'full' }
     ]),

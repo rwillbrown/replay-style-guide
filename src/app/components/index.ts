@@ -9,4 +9,5 @@ export * from './buttons/buttons';
 export * from './forms/forms';
 export * from './product-card/product-card';
 export * from './checkout/checkout';
+export * from './checkout-rvw/checkout-rvw';
 export * from './site-footer/site-footer';

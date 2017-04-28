@@ -37,6 +37,8 @@ a, a:visited, a:active, a:hover {
     text-decoration: none;
 }
 
+img { width: 100%; }
+
 @media (max-width: $mobile-breakpoint) {
     body {
         margin-top: 50px;

@@ -12,6 +12,10 @@ h6, .h6 { font-size: $font-size-base; }
 
 h1.product, .h1.product { font-size: $font-size-base; }
 
+.text-semi { font-weight: 600; }
+
+.text-normal { font-weight: 400; }
+
 .text-small {
     font-size: $font-size-sm;
 }
@@ -35,6 +39,9 @@ h1.product, .h1.product { font-size: $font-size-base; }
 }
 .text-green {
     color: $green;
+}
+.text-orange {
+    color: $orange;
 }
 
 .text-upper {

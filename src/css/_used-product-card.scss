@@ -1,0 +1,73 @@
+@import 'variables';
+
+.used-item-container {
+    background-color: $white;
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.29);
+    overflow: hidden;
+}
+.used-item-container .used-item-price {
+    font-size: $font-size-xlg;
+    color: $white;
+    background-color: $orange;
+    font-weight: 700;
+    max-height: 100%;
+}
+.used-item-container .item-photo img {
+    display: block;
+    width: 100%;
+    max-width: 90px;
+    margin: 0 auto;
+}
+
+.used-item-container .item-details .col-4 h1 {
+    min-height: 60px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .used-item-container {
+        box-shadow: none;
+        border-bottom: 1px solid $gray-lightest;
+        margin-bottom: 0;
+    }
+    .used-item-container .used-item-price {
+        display: none;
+    }
+    .used-item-container .item-photo {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        max-width: 25%;
+        padding: 0 10px;
+        border-right: 1px solid $gray-lightest;
+    }
+    .used-item-container .item-details {
+        border-right: 1px solid $gray-lightest;
+    }
+    .used-item-container .item-details .col-4 {
+        padding-bottom: 5px;
+    }
+    .used-item-container .item-details .col-4 div {
+        display: inline-block;
+    }
+    .used-item-container .item-details .col-4 h1 {
+        min-height: 35px;
+        max-height: 35px;
+        overflow: hidden;
+    }
+    .used-item-container .item-details .col-4 .text-base {
+        font-size: $font-size-sm;
+    }
+    .used-item-container .item-btns {
+        padding: 0;
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    .used-item-container .item-btns a.button,
+    .used-item-container .item-btns button {
+        color: $orange;
+        background-color: transparent;
+    }
+}

@@ -23,6 +23,7 @@ export function toArray(obj) {
     AppComponents.filtersBar,
     AppComponents.progressBar,
     AppComponents.productCard,
+    AppComponents.usedProductCard,
     AppComponents.checkout,
     AppComponents.checkoutRvw,
     AppComponents.sideCart,

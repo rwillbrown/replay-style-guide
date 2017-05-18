@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementsByTagName("body")[0].classList.toggle("search-open");
         });
 
-        /* Keep the placeholder hidden if someone has entered text and left the box */
+        /* SEARCH BOX: Keep the placeholder hidden if someone has entered text and left the box */
         document.getElementById("search").addEventListener("blur", function() {
             var labelSpans = this.nextElementSibling.querySelectorAll("span");
             if (this.value == "") {
@@ -45,13 +45,25 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        /* FORMS: Keep the label up top if someone enters text then leaves the box */
+        var inputs = document.querySelectorAll(".input-group input, .input-group textarea");
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener("blur", function() {
+                if (this.value == "") {
+                    this.classList.remove("filled");
+                } else {
+                    this.classList.add("filled");
+                }
+            });
+        }
+
         /* Show/Hide the side cart when the icon is clicked */
         document.getElementById("cart-icon").addEventListener("click", function() {
             document.getElementsByClassName("side-cart")[0].classList.toggle("show");
         });
 
         /* Show/Hide Filter Dropdowns */
-        filterBtns = document.querySelectorAll(".filter-container button");
+        var filterBtns = document.querySelectorAll(".filter-container button");
         for (var i = 0; i < filterBtns.length; i++) {
             filterBtns[i].addEventListener("click", function() {
                 for (var j = 0; j < filterBtns.length; j++) {

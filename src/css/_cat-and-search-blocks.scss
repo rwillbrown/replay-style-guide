@@ -96,3 +96,74 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/* New Category Blocks */
+.block.category {
+}
+.block.category .box {
+    padding: 0;
+}
+.block.category .title {
+    @include display-flex();
+    color: $white;
+    width: 100%;
+    min-height: 20%;
+}
+.block.category .title i {
+    font-size: 50px;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+.block.category .title h1 {
+    display: inline-block;
+    font-size: $font-size-lg;
+    text-transform: uppercase;
+    font-weight: 300;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+
+.block.category .title.green {
+    background: $gradient-green;
+}
+.block.category .title.blue {
+    background: $gradient-blue;
+}
+.block.category .title.purple {
+    background: $gradient-purple;
+}
+.block.category .title.yellow {
+    background: $gradient-yellow;
+}
+.block.category .title.orange {
+    background: $gradient-orange;
+}
+.block.category .title.red {
+    background: $gradient-red;
+}
+
+.block.category .category-list {
+    @include display-flex();
+    width: 100%;
+    height: 80%;
+    position: relative;
+    transform: initial;
+    top: initial;
+    left: initial;
+}
+.block.category .category-list a {
+    color: $brand-blue;
+    display: block;
+    width: 40%;
+    margin: 5% 5%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.block.category .category-list a i {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+.block.category .category-list a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,115 @@
+@import 'variables';
+
+.profile-stats {
+}
+.profile-stats .profile-name {
+    position: relative;
+}
+.profile-stats .profile-name i {
+    color: $green;
+    font-size: 18px;
+}
+.profile-stats .profile-name .profile-show-btn {
+    color: $black;
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .2s ease-in-out;
+}
+.profile-stats .profile-name .profile-show-btn.open {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.profile-menu {
+    background-color: $brand-blue;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.profile-menu .swiper-container {
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: -15px;
+}
+.profile-menu .swiper-container .swiper-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.profile-menu .swiper-container .swiper-wrapper  a {
+    color: $white;
+    border-bottom: 4px solid $white;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 0 11px 0;
+    margin: 0 15px;
+}
+.profile-menu .swiper-container .swiper-wrapper  a:hover,
+.profile-menu .swiper-container .swiper-wrapper  a.active {
+    color: $green;
+    border-bottom: 4px solid $green;
+} 
+
+.profile-edit-box {
+    background-color: $white;
+    display: block;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.29);
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.profile-photo img {
+    display: block;
+    max-width: 90px;
+    max-height: 90px;
+    margin: 0 auto 15px auto;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .profile-stats .profile-name .profile-show-btn {
+        display: block;
+    }
+    .profile-stats .grid .profile-photo,
+    .profile-stats .grid .profile-name {
+        border-bottom: 1px solid $gray-light;
+    }
+    .profile-stats .grid .profile-photo {
+        -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+    .profile-stats .grid .profile-name {
+        -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+        max-width: 80%;
+    }
+    .profile-stats .profile-metrics {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+        padding: 0;
+    }
+    .profile-stats .profile-metrics.open {
+        max-height: 500px;
+        padding: 8px;
+    }
+    .profile-stats .profile-metrics .col-3 {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .profile-menu .swiper-container {
+        padding-bottom: 15px;
+    }
+}

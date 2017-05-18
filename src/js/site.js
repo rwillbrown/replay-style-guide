@@ -64,10 +64,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         /* Checkout Accordions */
-        checkoutAccordions = document.querySelectorAll("#checkout-forms-container .form-container .title-bar");
+        var checkoutAccordions = document.querySelectorAll("#checkout-forms-container .form-container .title-bar");
         for (var i = 0; i < checkoutAccordions.length; i++) {
             checkoutAccordions[i].addEventListener("click", function() {
                 this.parentNode.classList.toggle("active");
+            });
+        }
+
+        /* Show Profile Metrics On Mobile */
+        var profileStats = document.querySelectorAll(".profile-stats");
+        for (var i = 0; i < profileStats.length; i++) {
+            profileStats[i].addEventListener("click", function() {
+                document.querySelectorAll(".profile-show-btn")[0].classList.toggle("open");
+                document.querySelectorAll(".profile-metrics")[0].classList.toggle("open");
             });
         }
 

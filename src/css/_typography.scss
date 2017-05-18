@@ -24,8 +24,12 @@ h1.product, .h1.product { font-size: $font-size-base; }
     font-size: $font-size-base;
 }
 
-.text-large {
+.text-xlarge {
     font-size: $font-size-lg;
+}
+
+.text-large {
+    font-size: $font-size-xlg;
 }
 
 .text-white {

@@ -73,6 +73,10 @@ form {}
 .input-group.invalid textarea {
     border-bottom: 1px solid $red;
 }
+.input-group.disabled input,
+.input-group.disabled textarea {
+    border-bottom: 1px solid $black;
+}
 .input-group.light input,
 .input-group.light textarea {
     color: $white;
@@ -99,6 +103,12 @@ form {}
 .input-group.invalid textarea:focus + label,
 .input-group.invalid textarea.filled + label {
     color: $red;
+}
+.input-group.disabled input:focus + label,
+.input-group.disabled input.filled + label,
+.input-group.disabled textarea:focus + label,
+.input-group.disabled textarea.filled + label {
+    color: $black;
 }
 
 .input-group.checkbox {

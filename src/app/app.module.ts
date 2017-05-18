@@ -31,6 +31,7 @@ export function toArray(obj) {
     AppPages.ProductPage,
     AppPages.CheckoutMain,
     AppPages.CheckoutReview,
+    AppPages.ProfilePage,
     AppComponent
   ],
   imports: [
@@ -42,6 +43,7 @@ export function toArray(obj) {
       { path: 'product', component: AppPages.ProductPage },
       { path: 'checkout', component: AppPages.CheckoutMain },
       { path: 'checkout-review', component: AppPages.CheckoutReview },
+      { path: 'profile', component: AppPages.ProfilePage },
       // { path: 'content', component: ContentDetailComponent },
       { path: '', redirectTo: 'index', pathMatch: 'full' }
     ]),

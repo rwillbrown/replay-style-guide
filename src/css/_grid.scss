@@ -51,7 +51,7 @@
 }
 
 .block {
-    height: 17.5rem;
+    min-height: 380px;
     padding: 0.5rem;
 }
 
@@ -233,9 +233,9 @@
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-    
+
     .block {
-        height: 12.5rem;
+        /*height: auto;*/
     }
 
     .grid-container.mobile-full .block {
@@ -371,7 +371,7 @@
 
 @media only screen and (min-width: 64em) {
     .block {
-        height: 15rem;
+        height: 431px;
     }
 }
 
